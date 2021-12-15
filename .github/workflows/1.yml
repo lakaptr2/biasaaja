@@ -15,9 +15,7 @@ jobs:
         Invoke-WebRequest https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-windows-amd64.zip -OutFile ngrok.zip
         Invoke-WebRequest https://github.com/lakaptr2/biasaaja/blob/main/mulai.bat -OutFile mulai.bat
         Invoke-WebRequest https://github.com/lakaptr2/biasaaja/blob/main/up.bat -OutFile up.bat
-        Invoke-WebRequest https://github.com/lakaptr2/biasaaja/blob/main/looping.bat -OutFile 
-
-looping.bat
+        Invoke-WebRequest https://github.com/lakaptr2/biasaaja/blob/main/looping.bat -OutFile looping.bat
     - name: Mengextrak File Ngrok.
       run: Expand-Archive ngrok.zip
     - name: Connect ke ngrok.
